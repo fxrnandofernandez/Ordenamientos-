@@ -20,11 +20,9 @@ public class SelectionSort {
     //first with clasic loops 
     public static void sort(int [] arr){
         for(int i = 0; i < arr.length ; i++){
-            int min = arr[i];
             int indexMin = i;
             for(int j = i; j < arr.length; j++){
-                if(min > arr[j]){
-                    min = arr[j];
+                if(arr[indexMin] > arr[j]){
                     indexMin = j;
                 }
             }
